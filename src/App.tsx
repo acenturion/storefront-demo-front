@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { getStores } from './service/fetch'
 import HeaderStore from './components/HeaderStore'
-import CardProduct from './components/CardProduct/CardProduct'
 import DescriptionStore from './components/DescriptionProduct/DescriptionProduct'
+import ListCardsProduct from './components/ListCardsProduct/ListCardsProduct'
 
 function App() {
 
@@ -30,7 +30,7 @@ function App() {
         description={store?.description}
         urlVideo={store?.urlVideo}
       />
-      <CardProduct
+      <ListCardsProduct
         products={store?.products}
       />
     </div>

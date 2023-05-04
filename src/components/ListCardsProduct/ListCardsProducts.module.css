@@ -1,0 +1,13 @@
+.container {
+    
+}
+.title {
+    border-bottom: 1px solid white;
+    line-height: 2.5em;
+}
+.productsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}

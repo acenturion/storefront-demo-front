@@ -1,31 +1,27 @@
 import { Product } from "../../interfaces";
+import classes from './CardProduct.module.css'
 
 interface CardProductProps {
-    products: Product[]
+    product: Product
 }
 const CardProduct = ({
-    products
+    product
 }: CardProductProps) => {
 
     return (
-        <div className="">
-            <h2>Products:</h2>
-            {products.map(product => {
-                return (
-                    <div>
-                        <h2>{product?.name}</h2>
-                        <p key={product?.id}>{product?.description}</p>
-                        {
-                            product.photos.map(photo => (
-                                <img
-                                width={200}
-                                height={200}
-                                src={photo.urlPhoto} />
-                            ))
-                        }
-                    </div>
-                )
-            })}
+        <div>
+            <h2 className={classes.title}>{product?.name}</h2>
+            <p key={product?.id}>{product?.description}</p>
+            {
+                product.photos.map(photo => (
+                    <img
+                        key={photo.id}
+                        width={200}
+                        height={200}
+                        src={photo.urlPhoto}
+                    />
+                ))
+            }
         </div>
     )
 }
