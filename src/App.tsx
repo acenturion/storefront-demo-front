@@ -7,7 +7,7 @@ import DescriptionStore from './components/DescriptionProduct/DescriptionProduct
 
 function App() {
 
-  const [store, setStore] = useState({
+  const [store, setStore] = useState<any>({
     name: '',
     products: [],
     description: '',
@@ -15,7 +15,7 @@ function App() {
   })
 
   useEffect(() => {
-    getStores().then(res => {
+    getStores().then((res) => {
       console.log("RES", res)
       setStore(res);
     });
@@ -26,7 +26,7 @@ function App() {
       <HeaderStore
         title={store?.name}
       />
-      <DescriptionStore
+      <DescriptionStore 
         description={store?.description}
         urlVideo={store?.urlVideo}
       />

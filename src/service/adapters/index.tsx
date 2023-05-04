@@ -11,7 +11,7 @@ const adaptStores = (payload: any) => {
 
 const adaptProducts = (payload: any) => {
     console.log("XSDSD", payload)
-    return payload.map(product => (
+    return payload.map((product: any) => (
         {
             id: product.id,
             description: product.attributes.Description,
@@ -22,7 +22,7 @@ const adaptProducts = (payload: any) => {
 }
 
 const adaptProductPhotos = (payload: any) => {
-    return payload.map(photo => (
+    return payload.map((photo: any) => (
         {
             id: photo.id,
             urlPhoto: photo.attributes.url
