@@ -43,10 +43,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #e9f0be;
+  background-color: #4600ff;
   cursor: pointer;
   transition: border-color 0.25s;
-  color: black;
+  color: white;
 }
 
 button:hover {
