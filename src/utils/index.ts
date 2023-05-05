@@ -10,7 +10,14 @@ const getVideoId = (url: string) => {
     return videoId;
 }
 
+const formatPrice = (value: number) => {
+  const numeroFormateado = value.toFixed(2);
+  return '$' + numeroFormateado;
+}
+
+
 export {
     getVideoId,
+    formatPrice,
 }
 

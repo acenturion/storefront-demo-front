@@ -1,13 +1,9 @@
-.container {
-    
-}
 .title {
     border-bottom: 1px solid white;
     line-height: 2.5em;
 }
 .productsContainer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
 }

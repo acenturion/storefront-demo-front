@@ -1,4 +1,5 @@
 import { Product } from "../../interfaces";
+import { formatPrice } from "../../utils";
 import classes from './CardProduct.module.css'
 
 interface CardProductProps {
@@ -12,6 +13,7 @@ const CardProduct = ({
         <div>
             <h2 className={classes.title}>{product?.name}</h2>
             <p key={product?.id}>{product?.description}</p>
+            <p className={classes.price}>{formatPrice(product.price)}</p>
             {
                 product.photos.map(photo => (
                     <img

@@ -11,6 +11,7 @@ export interface Product {
     name: string,
     description: string,
     photos: ProductPhotos[],
+    price: number,
 }
 
 export interface ProductPhotos {
