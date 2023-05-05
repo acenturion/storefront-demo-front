@@ -5,3 +5,14 @@
 .video {
     width: 100%;
 }
+
+.title {
+    border-bottom: 1px solid white;
+    line-height: 1.5em;
+}
+
+@media (prefers-color-scheme: light) {
+    .title {
+        border-bottom: 1px solid #213547;
+    }
+}

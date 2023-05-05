@@ -10,6 +10,7 @@ const DescriptionStore = ({
 }: DescriptionStoreProps) => {
     return (
         <div className={classes.container}>
+            <h2 className={classes.title}>About Us</h2>
             <p>{description}</p>
             <iframe title="videoCompanyFrame"
                 width="853"

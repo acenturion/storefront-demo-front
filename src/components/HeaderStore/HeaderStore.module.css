@@ -8,3 +8,16 @@
   align-items: flex-end;
   padding: 1em;
 }
+
+h1 {
+  background-color: #213547;
+  padding: 0.5em;
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  h1 {
+      background-color: white;
+      color: #213547;
+  }
+}

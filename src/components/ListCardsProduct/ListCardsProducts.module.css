@@ -18,7 +18,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .container {
+    .title {
         border-bottom: 1px solid #213547;
     }
 }
