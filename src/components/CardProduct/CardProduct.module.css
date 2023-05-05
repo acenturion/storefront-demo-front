@@ -4,11 +4,12 @@
     font-style: italic;
 }
 
-.priceContainer {
+.buttonContainer {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
 }
 
 @media screen and (max-width: 768px) {

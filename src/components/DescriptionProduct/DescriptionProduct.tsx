@@ -1,3 +1,4 @@
+import TitleSection from '../TitleSection/TitleSection';
 import classes from './DescriptionProduct.module.css'
 
 interface DescriptionStoreProps {
@@ -9,19 +10,21 @@ const DescriptionStore = ({
     urlVideo,
 }: DescriptionStoreProps) => {
     return (
-        <div className={classes.container}>
-            <h2 className={classes.title}>About Us</h2>
-            <p>{description}</p>
-            <iframe title="videoCompanyFrame"
-                width="853"
-                height="480"
-                className={classes.video}
-                allowFullScreen
-                frameBorder="0"
-                src={`https://www.youtube.com/embed/${urlVideo}`}
+        <>
+            <TitleSection title={'About Us'} />
+            <div className={classes.container}>
+                <p>{description}</p>
+                <iframe title="videoCompanyFrame"
+                    width="853"
+                    height="480"
+                    className={classes.video}
+                    allowFullScreen
+                    frameBorder="0"
+                    src={`https://www.youtube.com/embed/${urlVideo}`}
                 >
-            </iframe>
-        </div>
+                </iframe>
+            </div>
+        </>
     );
 }
 

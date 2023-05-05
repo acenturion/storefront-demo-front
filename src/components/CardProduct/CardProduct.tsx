@@ -13,9 +13,12 @@ const CardProduct = ({
         <div>
             <h2 className={classes.title}>{product?.name}</h2>
             <p key={product?.id}>{product?.description}</p>
-            <div className={classes.priceContainer}>
+            <div>
                     <p className={classes.price}>{formatPrice(product.price)}</p>
-                    <button>Ask for sample</button>
+            </div>
+            <div className={classes.buttonContainer}>
+                    <button>Request for Proposal</button>
+                    <button>Request samples</button>
             </div>
             {
                 product.photos.map(photo => (

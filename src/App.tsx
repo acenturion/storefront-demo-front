@@ -4,6 +4,7 @@ import { getStores } from './service/fetch'
 import HeaderStore from './components/HeaderStore'
 import DescriptionStore from './components/DescriptionProduct/DescriptionProduct'
 import ListCardsProduct from './components/ListCardsProduct/ListCardsProduct'
+import ContactUsSection from './components/ContactUsSection/ContactUsSection'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <ListCardsProduct
         products={store?.products}
       />
+      <ContactUsSection />
     </div>
   )
 }
