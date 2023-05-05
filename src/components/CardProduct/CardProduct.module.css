@@ -4,6 +4,13 @@
     font-style: italic;
 }
 
+.priceContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
     iframe {
         height: 197px;
