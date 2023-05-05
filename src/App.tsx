@@ -25,6 +25,7 @@ function App() {
     <div className='container'>
       <HeaderStore
         title={store?.name}
+        urlHeader={store?.urlHeader}
       />
       <DescriptionStore 
         description={store?.description}

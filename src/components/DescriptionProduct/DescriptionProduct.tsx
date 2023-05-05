@@ -1,3 +1,5 @@
+import classes from './DescriptionProduct.module.css'
+
 interface DescriptionStoreProps {
     description: string,
     urlVideo: string,
@@ -7,12 +9,12 @@ const DescriptionStore = ({
     urlVideo,
 }: DescriptionStoreProps) => {
     return (
-        <div>
+        <div className={classes.container}>
             <p>{description}</p>
             <iframe title="videoCompanyFrame"
                 width="853"
                 height="480"
-                className="video-container"
+                className={classes.video}
                 allowFullScreen
                 frameBorder="0"
                 src={`https://www.youtube.com/embed/${urlVideo}`}

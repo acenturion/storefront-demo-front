@@ -2,8 +2,9 @@ export interface Store {
     id: number,
     name: string,
     description: string,
-    videoUrl: string,
+    urlVideo: string,
     products: Product[],
+    urlHeader: string,
 }
 
 export interface Product {

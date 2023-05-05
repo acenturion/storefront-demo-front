@@ -6,6 +6,7 @@ const adaptStores = (payload: any) => {
         description: payload?.data.attributes?.provider?.data?.attributes?.description,
         urlVideo: getVideoId(payload?.data.attributes?.provider?.data?.attributes?.videoPresentation),
         products: adaptProducts(payload?.data.attributes?.products?.data),
+        urlHeader: payload?.data.attributes?.provider?.data?.attributes?.header?.data?.attributes?.url
     }
 }
 
